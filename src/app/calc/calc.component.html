@@ -1,0 +1,22 @@
+<form>
+  <div class="input-1">
+    <input type="number" name="num1" [(ngModel)]="num1">
+  </div>
+  <div class="input-2">
+    <input type="number" name="num2" [(ngModel)]="num2">
+  </div>
+  <button class="buttonSoma" type="button" (click)="somar()">
+    <span>+</span>
+  </button>
+  <button class="buttonSub" type="button" (click)="subtrair()">
+    <span>-</span>
+  </button>
+  <button class="buttonMulti" type="button" (click)="multiplicar()">
+    <span>×</span>
+  </button>
+  <button class="buttonDiv" type="button" (click)="dividir()">
+    <span>÷</span>
+  </button>
+  <input name="result" [(ngModel)]="result" disabled>
+  <button type="reset">Limpar</button>
+</form>
